@@ -1,15 +1,23 @@
 {
   "compilerOptions": {
     // Enable latest features
-    "lib": ["ESNext", "DOM"],
+    "lib": [
+      "ESNext",
+      "ES6", "ES7",
+      "ES2019",
+      "ES2020",
+      "ES2021",
+      "ES2022",
+      "ES2023"
+    ],
     "target": "ESNext",
-    "module": "ESNext",
+    "module": "nodenext",
     "moduleDetection": "force",
-    "jsx": "react-jsx",
     "allowJs": true,
+    "checkJs": true,
 
     // Bundler mode
-    "moduleResolution": "bundler",
+    "moduleResolution": "nodenext",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "noEmit": true,
