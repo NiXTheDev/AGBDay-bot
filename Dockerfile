@@ -1,7 +1,7 @@
 FROM oven/bun:latest
 
-COPY ./package.json ./bun.lock ./index.ts ./
-
+ADD https://github.com/NiXtheDev/AGBday-bot.git /bot
+WORKDIR /bot
 RUN bun i
 
 CMD [ "bun", "run", "index.ts" ]
